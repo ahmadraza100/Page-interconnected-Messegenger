@@ -1,10 +1,8 @@
 
 
+document.querySelector("#send").addEventListener("click",function(){
 
-
-
-
-document.querySelector("#send2").addEventListener("click", function(){
-   var messege = document.getElementById("messege2").value; 
-   document.querySelector("#mb1").innerHTML = messege;
-});
+   var messege = document.querySelector("#source").value;
+   localStorage.setItem("Messege" , messege);
+   return;
+})
